@@ -35,4 +35,3 @@ ObjConstructor.prototype.newName = function(newName){
 }
 
 
-
