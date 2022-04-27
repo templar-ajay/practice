@@ -5,7 +5,7 @@ class Employee{
     constructor (givenName,givenExperience,age){
 
         this.Name = givenName;
-        this.Experience = givenExperience
+        this.Experience = `${givenExperience} years`
         this.Age = age;
     }
 
@@ -28,3 +28,14 @@ let Cheenu = new Employee("Cheenu",10,22)
 
 console.log(Cheenu);
 console.log(Employee.add(5,4))
+
+
+class Programmer extends Employee{
+    constructor(givenName,givenExperience,age,language,github){
+    super(givenName,givenExperience,age)
+    this.language = language;
+    this.github = github;
+}
+}
+let Ajay = new Programmer("Ajay",1,22,"Javascript","https://github.com/templar-command0")
+console.log(Ajay)
