@@ -35,7 +35,18 @@ class Programmer extends Employee{
     super(givenName,givenExperience,age)
     this.language = language;
     this.github = github;
-}
-}
+    }
+    favouriteLanguage(){
+        if(this.language=="python"){
+            return "python"
+        }else return "Javascript"
+    }
+
+    static toThePower(a,b){
+        return a**b
+    }
+}   
+
 let Ajay = new Programmer("Ajay",1,22,"Javascript","https://github.com/templar-command0")
-console.log(Ajay)
+console.log(Ajay.favouriteLanguage())
+console.log(Programmer.toThePower(3,3))
